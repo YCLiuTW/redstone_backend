@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  python:
+    build: python-fastapi
+    tty: true
+    volumes:
+      - type: bind
+        source: ../
+        target: /app
